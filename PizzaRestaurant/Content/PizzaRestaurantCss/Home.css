@@ -1,0 +1,870 @@
+:root {
+  --mainBlack: #121618;
+  --mainWhite: #fff;
+  --mainGreen: #80BB03;
+  --mainBlackBG: rgba(0,0,0,0.5);
+  --mainGray: #6c757d;
+  --mainIcon: #92dd59;
+  --mainServicesText: #b08432;
+  --mainDarken: #121618;
+  --mainFace: #4267b2;
+  --mainTwitter: #1DA1F2;
+  --mainGoogle: #EC443B; }
+
+.ftco-section .heading-section, .ftco-blog .heading-section {
+  color: var(--mainWhite);
+  padding: 2rem 0 0 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/bg_4.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*end header*/
+  /*end banner*/
+  /*end information*/
+  /*end about-restaurant*/
+  /*Services*/
+  /*Order Pizza*/
+  /*Pricing*/
+  /*Gallery*/
+  /*Menu**/
+  /*ftco-blog*/
+  /*end reponsive*/ }
+  body header {
+    display: flex;
+    width: 100%;
+    background: var(--mainBlack) !important;
+    position: fixed;
+    z-index: 200; }
+    body header .show-menu-btn, body header .hide-menu-btn {
+      font-size: 30px;
+      cursor: pointer;
+      display: none;
+      color: var(--mainWhite); }
+    body header .show-menu-btn:hover, body header .hide-menu-btn:hover {
+      color: var(--mainGreen); }
+    body header #check {
+      position: absolute;
+      visibility: hidden;
+      z-index: -1000; }
+    body header .show-menu-btn {
+      margin-left: auto; }
+    body header .header-menu {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0; }
+      body header .header-menu .logo {
+        font-size: 50px; }
+      body header .header-menu a {
+        color: var(--mainWhite);
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin: 0 2rem;
+        text-decoration: none;
+        text-transform: uppercase; }
+        body header .header-menu a img {
+          position: relative;
+          top: 0;
+          left: 0;
+          width: 150px; }
+        body header .header-menu a:hover {
+          color: var(--mainGreen) !important; }
+  body .banner .carousel-inner .carousel-item {
+    height: 100vh; }
+    body .banner .carousel-inner .carousel-item .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100vw;
+      height: 100%;
+      background: var(--mainBlackBG); }
+    body .banner .carousel-inner .carousel-item .d-block {
+      height: 750px !important; }
+    body .banner .carousel-inner .carousel-item .carousel-caption {
+      display: flex !important;
+      height: 100%;
+      align-items: center;
+      justify-content: center !important; }
+      body .banner .carousel-inner .carousel-item .carousel-caption .banner-info-pizza-1 span, body .banner .carousel-inner .carousel-item .carousel-caption .banner-info-pizza-2 span, body .banner .carousel-inner .carousel-item .carousel-caption .banner-welcome span {
+        font-family: 'Indie Flower', cursive;
+        font-size: 2.5rem !important;
+        color: var(--mainGreen); }
+      body .banner .carousel-inner .carousel-item .carousel-caption .banner-info-pizza-1 h2, body .banner .carousel-inner .carousel-item .carousel-caption .banner-info-pizza-2 h2, body .banner .carousel-inner .carousel-item .carousel-caption .banner-welcome h2 {
+        font-weight: bold;
+        margin-bottom: 1.5rem; }
+      body .banner .carousel-inner .carousel-item .carousel-caption .banner-info-pizza-1 p, body .banner .carousel-inner .carousel-item .carousel-caption .banner-info-pizza-2 p, body .banner .carousel-inner .carousel-item .carousel-caption .banner-welcome p {
+        font-size: 1.2rem; }
+      body .banner .carousel-inner .carousel-item .carousel-caption .banner-info-pizza-1 .banner-btn .btn-order, body .banner .carousel-inner .carousel-item .carousel-caption .banner-info-pizza-1 .banner-btn .btn-view, body .banner .carousel-inner .carousel-item .carousel-caption .banner-info-pizza-2 .banner-btn .btn-order, body .banner .carousel-inner .carousel-item .carousel-caption .banner-info-pizza-2 .banner-btn .btn-view, body .banner .carousel-inner .carousel-item .carousel-caption .banner-welcome .banner-btn .btn-order, body .banner .carousel-inner .carousel-item .carousel-caption .banner-welcome .banner-btn .btn-view {
+        outline: none;
+        border: none;
+        padding: 0.8rem 0.4rem;
+        outline: none;
+        cursor: pointer;
+        text-transform: uppercase; }
+      body .banner .carousel-inner .carousel-item .carousel-caption .banner-info-pizza-1 .banner-btn .btn-order, body .banner .carousel-inner .carousel-item .carousel-caption .banner-info-pizza-2 .banner-btn .btn-order, body .banner .carousel-inner .carousel-item .carousel-caption .banner-welcome .banner-btn .btn-order {
+        color: var(--mainBlack);
+        background: var(--mainGreen);
+        transition: 0.4s;
+        border: 2px solid var(--mainGreen); }
+        body .banner .carousel-inner .carousel-item .carousel-caption .banner-info-pizza-1 .banner-btn .btn-order:hover, body .banner .carousel-inner .carousel-item .carousel-caption .banner-info-pizza-2 .banner-btn .btn-order:hover, body .banner .carousel-inner .carousel-item .carousel-caption .banner-welcome .banner-btn .btn-order:hover {
+          border: 2px solid var(--mainGreen);
+          background: transparent;
+          color: var(--mainGreen); }
+      body .banner .carousel-inner .carousel-item .carousel-caption .banner-info-pizza-1 .banner-btn .btn-view, body .banner .carousel-inner .carousel-item .carousel-caption .banner-info-pizza-2 .banner-btn .btn-view, body .banner .carousel-inner .carousel-item .carousel-caption .banner-welcome .banner-btn .btn-view {
+        background: transparent;
+        border: 2px solid var(--mainWhite);
+        transition: 0.4s; }
+        body .banner .carousel-inner .carousel-item .carousel-caption .banner-info-pizza-1 .banner-btn .btn-view:hover, body .banner .carousel-inner .carousel-item .carousel-caption .banner-info-pizza-2 .banner-btn .btn-view:hover, body .banner .carousel-inner .carousel-item .carousel-caption .banner-welcome .banner-btn .btn-view:hover {
+          background: var(--mainGreen);
+          border: 2px solid var(--mainGreen); }
+  body .information .info-block {
+    width: 100%; }
+    body .information .info-block .info-address-pizza {
+      background: var(--mainBlack);
+      padding: 2rem 2rem 1rem 8rem; }
+      body .information .info-block .info-address-pizza .info-item {
+        padding: 0; }
+        body .information .info-block .info-address-pizza .info-item .info-icon {
+          float: left; }
+          body .information .info-block .info-address-pizza .info-item .info-icon i {
+            color: var(--mainGreen); }
+        body .information .info-block .info-address-pizza .info-item .info-text {
+          float: left;
+          color: var(--mainWhite);
+          padding-left: 0.8rem; }
+          body .information .info-block .info-address-pizza .info-item .info-text p {
+            color: var(--mainGray); }
+    body .information .info-block .info-social-icon {
+      background: var(--mainGreen); }
+      body .information .info-block .info-social-icon .icon-block {
+        padding: 2rem 2rem; }
+        body .information .info-block .info-social-icon .icon-block a i {
+          color: var(--mainWhite);
+          font-size: 1.5rem; }
+  body .about-restaurant .about-restaurant-block {
+    padding: 0 !important; }
+    body .about-restaurant .about-restaurant-block .row {
+      margin: 0; }
+      body .about-restaurant .about-restaurant-block .row .about-restaurant-item {
+        padding: 0; }
+        body .about-restaurant .about-restaurant-block .row .about-restaurant-item .about-restaurant-img img {
+          width: 100%;
+          height: 100%; }
+      body .about-restaurant .about-restaurant-block .row .welcome-to-restaurant {
+        padding: 10rem 2rem 0 2rem;
+        color: var(--mainWhite); }
+        body .about-restaurant .about-restaurant-block .row .welcome-to-restaurant h1 {
+          text-align: left;
+          font-size: 2rem; }
+          body .about-restaurant .about-restaurant-block .row .welcome-to-restaurant h1 span {
+            color: var(--mainGreen); }
+        body .about-restaurant .about-restaurant-block .row .welcome-to-restaurant p {
+          margin-top: 2rem;
+          font-size: 1rem;
+          color: var(--mainGray); }
+  body .services {
+    background: url("../img/food.png") repeat;
+    padding: 8rem 0; }
+    body .services .services-header {
+      padding: 3rem 0; }
+      body .services .services-header h2 {
+        font-size: 45px;
+        font-weight: 400;
+        margin-bottom: 2rem; }
+    body .services .services-list-item .img-block {
+      border: 1px solid var(--mainGreen);
+      width: 100px;
+      height: 100px;
+      margin: 2rem auto;
+      position: relative;
+      z-index: 0;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      body .services .services-list-item .img-block .img {
+        margin: 1rem auto;
+        color: var(--mainWhite); }
+      body .services .services-list-item .img-block:after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: '';
+        z-index: -1;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+      body .services .services-list-item .img-block:hover, body .services .services-list-item .img-block:focus {
+        border: none; }
+        body .services .services-list-item .img-block:hover::after, body .services .services-list-item .img-block:focus::after {
+          background: var(--mainGreen);
+          transform: rotate(135deg); }
+    body .services .services-list-item .services-text h5 {
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: normal; }
+  body .ftco-section .container-wrap .services-wrap .img {
+    width: 50% !important;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  body .ftco-section .container-wrap .services-wrap .text {
+    width: 50%;
+    background: var(--mainBlackBG);
+    position: relative; }
+    body .ftco-section .container-wrap .services-wrap .text h3 {
+      color: var(--mainWhite);
+      font-size: 1.5rem; }
+    body .ftco-section .container-wrap .services-wrap .text p {
+      color: var(--mainGray);
+      font-size: 1rem; }
+    body .ftco-section .container-wrap .services-wrap .text .price span {
+      color: var(--mainGreen); }
+    body .ftco-section .container-wrap .services-wrap .text .price .btn-white {
+      border: 1px solid var(--mainWhite);
+      border-radius: 0;
+      font: 400 1rem;
+      color: var(--mainWhite); }
+      body .ftco-section .container-wrap .services-wrap .text .price .btn-white:hover {
+        border: 1px solid var(--mainGreen);
+        background: var(--mainGreen);
+        color: var(--mainBlack); }
+  body .pricing-entry {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px; }
+    body .pricing-entry .img {
+      width: 60px;
+      height: 60px;
+      background-size: cover;
+      background-position: center center;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
+    body .pricing-entry .desc {
+      width: calc(100% - 60px); }
+      body .pricing-entry .desc p {
+        margin-bottom: 0; }
+      body .pricing-entry .desc .text {
+        width: 100%;
+        display: block;
+        position: relative;
+        z-index: 0; }
+        body .pricing-entry .desc .text::after {
+          position: absolute;
+          bottom: 30%;
+          left: 0;
+          right: 0;
+          content: '';
+          width: 100%;
+          height: 1px;
+          border-bottom: 1px dashed var(--mainGreen);
+          z-index: 1; }
+        body .pricing-entry .desc .text h3 {
+          width: calc(100% - 80px);
+          font-size: 18px;
+          z-index: 3;
+          color: var(--mainWhite);
+          opacity: 0.8; }
+          body .pricing-entry .desc .text h3 span {
+            background: var(--mainDarken);
+            padding-right: 10px; }
+        body .pricing-entry .desc .text .price {
+          z-index: 3;
+          width: 80px;
+          color: var(--mainGreen);
+          text-align: right;
+          background: var(--mainDarken);
+          font-size: 16px; }
+      body .pricing-entry .desc .text-price p {
+        color: var(--mainGray); }
+  body .ftco-gallery {
+    padding-top: 7em; }
+    body .ftco-gallery .gallery {
+      height: 300px;
+      display: block;
+      position: relative;
+      background-size: cover;
+      background-repeat: no-repeat; }
+      body .ftco-gallery .gallery .icon {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        z-index: 0;
+        position: relative;
+        opacity: 0;
+        -moz-transition: all 0.6s ease;
+        -o-transition: all 0.6s ease;
+        -webkit-transition: all 0.6s ease;
+        -ms-transition: all 0.6s ease;
+        transition: all 0.6s ease; }
+        body .ftco-gallery .gallery .icon::after {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 50px;
+          height: 50px;
+          content: '';
+          background: var(--mainGreen);
+          z-index: -1;
+          -moz-transition: all 0.6s ease;
+          -o-transition: all 0.6s ease;
+          -webkit-transition: all 0.6s ease;
+          -ms-transition: all 0.6s ease;
+          transition: all 0.6s ease; }
+        body .ftco-gallery .gallery .icon span {
+          color: var(--mainWhite); }
+      body .ftco-gallery .gallery:hover .icon, body .ftco-gallery .gallery:focus .icon {
+        opacity: 1; }
+        body .ftco-gallery .gallery:hover .icon::after, body .ftco-gallery .gallery:focus .icon::after {
+          transform: rotate(135deg); }
+  body #section-counter {
+    position: relative;
+    z-index: 0; }
+    body #section-counter .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--mainBlack);
+      opacity: 0.8; }
+  body .ftco-counter {
+    padding: 7em 0; }
+    body .ftco-counter .icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+      position: relative;
+      margin-bottom: 20px;
+      z-index: 0; }
+      body .ftco-counter .icon::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: '';
+        border: 1px solid var(--mainGreen);
+        z-index: -1;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+      body .ftco-counter .icon img {
+        width: 50px;
+        height: 50px;
+        margin: 0.8rem 0; }
+    body .ftco-counter .text strong.number {
+      font-weight: 400;
+      font-size: 30px;
+      color: var(--mainGreen); }
+    body .ftco-counter .text p {
+      font-weight: 400;
+      font-size: 14px;
+      color: var(--mainWhite); }
+    body .ftco-counter .text:hover .icon:after, body .ftco-counter .text:focus .icon:after {
+      transform: rotate(135deg);
+      background: var(--mainGreen); }
+  body .ftco-menu .nav-link-wrap .nav-pills .nav-link.active, body .ftco-menu .nav-link-wrap .nav-pills .show > .nav-link {
+    color: var(--mainBlack);
+    background-color: var(--mainGreen);
+    border-radius: 0; }
+  body .ftco-menu .nav-link-wrap .nav-pills .nav-link {
+    border-radius: 0;
+    color: var(--mainGreen);
+    border: 1px solid var(--mainGreen);
+    margin: 0 0.5rem; }
+  body .ftco-menu .menu-wrap .menu-img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center; }
+  body .ftco-menu .menu-wrap .text h3 {
+    font-size: 22px; }
+    body .ftco-menu .menu-wrap .text h3 a {
+      color: var(--mainWhite);
+      text-decoration: none; }
+  body .ftco-menu .menu-wrap .text p {
+    color: var(--mainGray); }
+    body .ftco-menu .menu-wrap .text p .btn-white {
+      border: 1px solid var(--mainWhite);
+      border-radius: 0;
+      color: var(--mainWhite);
+      outline: none; }
+      body .ftco-menu .menu-wrap .text p .btn-white:hover {
+        background: var(--mainGreen);
+        color: var(--mainBlack);
+        border: 1px solid var(--mainGreen); }
+  body .ftco-menu .menu-wrap .text .price {
+    font-size: 16px;
+    font-weight: 400; }
+    body .ftco-menu .menu-wrap .text .price span {
+      color: var(--mainGreen); }
+  body .ftco-blog {
+    padding: 7em 0;
+    position: relative; }
+    body .ftco-blog .row .blog-entry .block-20 {
+      overflow: hidden;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 270px; }
+    body .ftco-blog .row .blog-entry .text {
+      position: relative; }
+      body .ftco-blog .row .blog-entry .text .meta > div {
+        display: inline-block;
+        margin-right: 5px;
+        margin-bottom: 0;
+        font-size: 14px; }
+        body .ftco-blog .row .blog-entry .text .meta > div a {
+          color: var(--mainGray);
+          font-size: 15px;
+          text-decoration: none; }
+          body .ftco-blog .row .blog-entry .text .meta > div a:hover {
+            color: var(--mainGray);
+            opacity: 0.6; }
+      body .ftco-blog .row .blog-entry .text .heading {
+        font-size: 18px;
+        margin-bottom: 1rem;
+        font-weight: 500; }
+        body .ftco-blog .row .blog-entry .text .heading a {
+          text-decoration: none;
+          color: var(--mainWhite); }
+          body .ftco-blog .row .blog-entry .text .heading a:hover, body .ftco-blog .row .blog-entry .text .heading a:focus, body .ftco-blog .row .blog-entry .text .heading a:active {
+            color: var(--mainGreen); }
+      body .ftco-blog .row .blog-entry .text p {
+        color: var(--mainGray); }
+  body .ftco-appointment {
+    width: 100%;
+    position: relative; }
+    body .ftco-appointment .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--mainGreen);
+      opacity: 0; }
+    body .ftco-appointment #map {
+      width: 100%;
+      height: 450px; }
+      body .ftco-appointment #map iframe {
+        border: none;
+        width: 100%;
+        height: 450px; }
+    body .ftco-appointment .appointment {
+      padding: 20px !important; }
+      body .ftco-appointment .appointment h3 {
+        color: var(--mainWhite); }
+  body .ftco-footer {
+    font-size: 16px;
+    padding: 7em 0;
+    background: var(--mainBlack); }
+    body .ftco-footer .ftco-footer-logo {
+      text-transform: uppercase;
+      letter-spacing: 0.1em; }
+    body .ftco-footer .ftco-footer-widget h2 {
+      font-weight: 400;
+      color: var(--mainWhite);
+      font-size: 16px;
+      position: relative;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    body .ftco-footer .ftco-footer-widget ul li a {
+      text-decoration: none; }
+      body .ftco-footer .ftco-footer-widget ul li a span {
+        color: var(--mainWhite); }
+    body .ftco-footer .ftco-footer-widget .btn-primary {
+      background: var(--mainWhite) !important;
+      border: 2px solid var(--mainWhite) !important; }
+      body .ftco-footer .ftco-footer-widget .btn-primary:hover {
+        background: var(--mainWhite);
+        border: 2px solid var(--mainWhite); }
+    body .ftco-footer p {
+      color: var(--mainWhite);
+      opacity: 0.7; }
+    body .ftco-footer a {
+      color: var(--mainWhite);
+      opacity: 0.7; }
+      body .ftco-footer a:hover {
+        color: var(--mainWhite); }
+    body .ftco-footer .ftco-heading-2 {
+      font-size: 17px;
+      font-weight: 400;
+      color: var(--mainBlack); }
+    body .ftco-footer .block-21 .blog-img {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: block;
+      width: 140px;
+      height: 80px; }
+    body .ftco-footer .block-21 .text .heading {
+      font-size: 1rem;
+      font-weight: 500; }
+      body .ftco-footer .block-21 .text .heading a {
+        color: var(--mainWhite);
+        text-decoration: none; }
+        body .ftco-footer .block-21 .text .heading a:hover, body .ftco-footer .block-21 .text .heading a:focus, body .ftco-footer .block-21 .text .heading a:active {
+          color: var(--mainGreen); }
+    body .ftco-footer .block-21 .text .meta > div {
+      display: inline-block;
+      font-size: 12px;
+      margin-right: 5px; }
+    body .ftco-footer .block-21 .text .meta a {
+      color: var(--mainGray); }
+      body .ftco-footer .block-21 .text .meta a:hover {
+        text-decoration: none;
+        color: var(--mainGreen); }
+    body .ftco-footer .ftco-footer-social li {
+      list-style: none;
+      margin: 0 10px 0 0;
+      display: inline-block; }
+      body .ftco-footer .ftco-footer-social li a {
+        width: 50px;
+        height: 50px;
+        display: block;
+        float: left;
+        background: var(--mainBlack);
+        opacity: 0.5;
+        position: relative; }
+        body .ftco-footer .ftco-footer-social li a span {
+          position: absolute;
+          font-size: 26px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+        body .ftco-footer .ftco-footer-social li a:hover {
+          color: var(--mainWhite); }
+    body .ftco-footer .footer-services .footer-services-text li a:hover {
+      color: var(--mainWhite) !important;
+      opacity: 1; }
+    body .ftco-footer .block-23 ul {
+      padding: 0; }
+      body .ftco-footer .block-23 ul li {
+        list-style: none; }
+        body .ftco-footer .block-23 ul li a {
+          display: table;
+          line-height: 1.5;
+          margin-bottom: 15px; }
+        body .ftco-footer .block-23 ul li span {
+          color: var(--mainWhite);
+          opacity: 0.7;
+          text-decoration: none; }
+        body .ftco-footer .block-23 ul li .icon, body .ftco-footer .block-23 ul li .text {
+          display: table-cell;
+          vertical-align: top; }
+        body .ftco-footer .block-23 ul li .icon {
+          width: 40px;
+          font-size: 18px;
+          padding-top: 2px;
+          color: var(--mainWhite);
+          opacity: 1; }
+  @media screen and (max-width: 992px) {
+    body .container-wrap .ftco-animate {
+      padding: 1rem 0; }
+      body .container-wrap .ftco-animate .services-wrap {
+        width: 100%; }
+    body .ftco-counter .counter-wrap {
+      margin-bottom: 3rem !important; }
+    body .menu-wrap .menu-img {
+      display: block;
+      width: 150px !important;
+      height: 150px !important;
+      margin: 0 auto;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center center; } }
+  @media screen and (max-width: 700px) {
+    body .menu-wrap {
+      margin-bottom: 2rem; }
+      body .menu-wrap .menu-img {
+        display: block;
+        width: 250px !important;
+        height: 250px !important;
+        margin: 0 auto;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center center; } }
+  @media screen and (max-width: 500px) {
+    body .services .services-block {
+      padding: 4rem 2rem; } }
+  @media screen and (max-width: 320px) {
+    body .banner .carousel-item .banner-btn .btn-order {
+      margin-bottom: 1rem; } }
+  @media screen and (max-width: 1200px) {
+    body {
+      /*end header*/
+      /*end banner*/
+      /*end information*/ }
+      body .show-menu-btn, body .hide-menu-btn {
+        display: block !important;
+        transition: 0.4s;
+        padding: 0 10px; }
+      body .header-menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--mainBlack);
+        right: -100%;
+        text-align: center;
+        transition: 0.7s;
+        padding: 10em 0 !important;
+        z-index: 1000 !important; }
+        body .header-menu a {
+          display: block !important;
+          padding: 20px 0 !important; }
+        body .header-menu .hide-menu-btn {
+          position: absolute;
+          top: 40px;
+          right: 40px; }
+        body .header-menu .logo {
+          display: none !important; }
+      body #check:checked ~ .header-menu {
+        right: 0 !important; }
+      body .banner .carousel-item {
+        height: auto; }
+        body .banner .carousel-item img {
+          height: 100vh; }
+      body .banner .img-pizza img {
+        width: 300px;
+        height: 300px;
+        padding: 20px 0; }
+      body .information .info-address-pizza {
+        padding: 1rem 2rem !important; }
+        body .information .info-address-pizza .info-item .info-icon {
+          height: 50px !important; } }
+  @media screen and (max-width: 1500px) {
+    body .about-restaurant .about-restaurant-block {
+      padding: 0 !important; }
+      body .about-restaurant .about-restaurant-block .row {
+        margin: 0; }
+        body .about-restaurant .about-restaurant-block .row .about-restaurant-item {
+          padding: 0; }
+          body .about-restaurant .about-restaurant-block .row .about-restaurant-item .about-restaurant-img img {
+            width: 100%;
+            height: 500px; }
+        body .about-restaurant .about-restaurant-block .row .welcome-to-restaurant {
+          background-image: url("../img/bg_4.jpg");
+          height: 100%;
+          padding: 4rem 1rem 4rem 1rem;
+          color: var(--mainWhite); }
+          body .about-restaurant .about-restaurant-block .row .welcome-to-restaurant h1 {
+            text-align: left;
+            font-size: 2rem; }
+            body .about-restaurant .about-restaurant-block .row .welcome-to-restaurant h1 span {
+              color: var(--mainGreen); }
+          body .about-restaurant .about-restaurant-block .row .welcome-to-restaurant p {
+            margin-top: 2rem;
+            font-size: 1rem;
+            color: var(--mainGray); } }
+
+.gioithieu-banner img, .order-banner img, .contact-banner img, .service-banner img, .login-banner img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; }
+.gioithieu-banner .overlay, .order-banner .overlay, .contact-banner .overlay, .service-banner .overlay, .login-banner .overlay {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background: var(--mainBlackBG); }
+.gioithieu-banner .gioithieu-capture, .gioithieu-banner .order-capture, .gioithieu-banner .contact-capture, .gioithieu-banner .service-capture, .gioithieu-banner .login-capture, .order-banner .gioithieu-capture, .order-banner .order-capture, .order-banner .contact-capture, .order-banner .service-capture, .order-banner .login-capture, .contact-banner .gioithieu-capture, .contact-banner .order-capture, .contact-banner .contact-capture, .contact-banner .service-capture, .contact-banner .login-capture, .service-banner .gioithieu-capture, .service-banner .order-capture, .service-banner .contact-capture, .service-banner .service-capture, .service-banner .login-capture, .login-banner .gioithieu-capture, .login-banner .order-capture, .login-banner .contact-capture, .login-banner .service-capture, .login-banner .login-capture {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  text-align: center;
+  padding: 0 5rem;
+  color: var(--mainWhite);
+  text-transform: uppercase; }
+  .gioithieu-banner .gioithieu-capture h1, .gioithieu-banner .order-capture h1, .gioithieu-banner .contact-capture h1, .gioithieu-banner .service-capture h1, .gioithieu-banner .login-capture h1, .order-banner .gioithieu-capture h1, .order-banner .order-capture h1, .order-banner .contact-capture h1, .order-banner .service-capture h1, .order-banner .login-capture h1, .contact-banner .gioithieu-capture h1, .contact-banner .order-capture h1, .contact-banner .contact-capture h1, .contact-banner .service-capture h1, .contact-banner .login-capture h1, .service-banner .gioithieu-capture h1, .service-banner .order-capture h1, .service-banner .contact-capture h1, .service-banner .service-capture h1, .service-banner .login-capture h1, .login-banner .gioithieu-capture h1, .login-banner .order-capture h1, .login-banner .contact-capture h1, .login-banner .service-capture h1, .login-banner .login-capture h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 400 !important; }
+  .gioithieu-banner .gioithieu-capture .text-banner .btn-gioithieu-home, .gioithieu-banner .order-capture .text-banner .btn-gioithieu-home, .gioithieu-banner .contact-capture .text-banner .btn-gioithieu-home, .gioithieu-banner .service-capture .text-banner .btn-gioithieu-home, .gioithieu-banner .login-capture .text-banner .btn-gioithieu-home, .order-banner .gioithieu-capture .text-banner .btn-gioithieu-home, .order-banner .order-capture .text-banner .btn-gioithieu-home, .order-banner .contact-capture .text-banner .btn-gioithieu-home, .order-banner .service-capture .text-banner .btn-gioithieu-home, .order-banner .login-capture .text-banner .btn-gioithieu-home, .contact-banner .gioithieu-capture .text-banner .btn-gioithieu-home, .contact-banner .order-capture .text-banner .btn-gioithieu-home, .contact-banner .contact-capture .text-banner .btn-gioithieu-home, .contact-banner .service-capture .text-banner .btn-gioithieu-home, .contact-banner .login-capture .text-banner .btn-gioithieu-home, .service-banner .gioithieu-capture .text-banner .btn-gioithieu-home, .service-banner .order-capture .text-banner .btn-gioithieu-home, .service-banner .contact-capture .text-banner .btn-gioithieu-home, .service-banner .service-capture .text-banner .btn-gioithieu-home, .service-banner .login-capture .text-banner .btn-gioithieu-home, .login-banner .gioithieu-capture .text-banner .btn-gioithieu-home, .login-banner .order-capture .text-banner .btn-gioithieu-home, .login-banner .contact-capture .text-banner .btn-gioithieu-home, .login-banner .service-capture .text-banner .btn-gioithieu-home, .login-banner .login-capture .text-banner .btn-gioithieu-home {
+    margin-right: 10px;
+    color: var(--mainWhite);
+    text-decoration: none; }
+  .gioithieu-banner .gioithieu-capture .text-banner .btn-gioithieu, .gioithieu-banner .gioithieu-capture .text-banner .btn-order, .gioithieu-banner .gioithieu-capture .text-banner .btn-contact, .gioithieu-banner .gioithieu-capture .text-banner .btn-service, .gioithieu-banner .gioithieu-capture .text-banner .btn-login, .gioithieu-banner .order-capture .text-banner .btn-gioithieu, .gioithieu-banner .order-capture .text-banner .btn-order, .gioithieu-banner .order-capture .text-banner .btn-contact, .gioithieu-banner .order-capture .text-banner .btn-service, .gioithieu-banner .order-capture .text-banner .btn-login, .gioithieu-banner .contact-capture .text-banner .btn-gioithieu, .gioithieu-banner .contact-capture .text-banner .btn-order, .gioithieu-banner .contact-capture .text-banner .btn-contact, .gioithieu-banner .contact-capture .text-banner .btn-service, .gioithieu-banner .contact-capture .text-banner .btn-login, .gioithieu-banner .service-capture .text-banner .btn-gioithieu, .gioithieu-banner .service-capture .text-banner .btn-order, .gioithieu-banner .service-capture .text-banner .btn-contact, .gioithieu-banner .service-capture .text-banner .btn-service, .gioithieu-banner .service-capture .text-banner .btn-login, .gioithieu-banner .login-capture .text-banner .btn-gioithieu, .gioithieu-banner .login-capture .text-banner .btn-order, .gioithieu-banner .login-capture .text-banner .btn-contact, .gioithieu-banner .login-capture .text-banner .btn-service, .gioithieu-banner .login-capture .text-banner .btn-login, .order-banner .gioithieu-capture .text-banner .btn-gioithieu, .order-banner .gioithieu-capture .text-banner .btn-order, .order-banner .gioithieu-capture .text-banner .btn-contact, .order-banner .gioithieu-capture .text-banner .btn-service, .order-banner .gioithieu-capture .text-banner .btn-login, .order-banner .order-capture .text-banner .btn-gioithieu, .order-banner .order-capture .text-banner .btn-order, .order-banner .order-capture .text-banner .btn-contact, .order-banner .order-capture .text-banner .btn-service, .order-banner .order-capture .text-banner .btn-login, .order-banner .contact-capture .text-banner .btn-gioithieu, .order-banner .contact-capture .text-banner .btn-order, .order-banner .contact-capture .text-banner .btn-contact, .order-banner .contact-capture .text-banner .btn-service, .order-banner .contact-capture .text-banner .btn-login, .order-banner .service-capture .text-banner .btn-gioithieu, .order-banner .service-capture .text-banner .btn-order, .order-banner .service-capture .text-banner .btn-contact, .order-banner .service-capture .text-banner .btn-service, .order-banner .service-capture .text-banner .btn-login, .order-banner .login-capture .text-banner .btn-gioithieu, .order-banner .login-capture .text-banner .btn-order, .order-banner .login-capture .text-banner .btn-contact, .order-banner .login-capture .text-banner .btn-service, .order-banner .login-capture .text-banner .btn-login, .contact-banner .gioithieu-capture .text-banner .btn-gioithieu, .contact-banner .gioithieu-capture .text-banner .btn-order, .contact-banner .gioithieu-capture .text-banner .btn-contact, .contact-banner .gioithieu-capture .text-banner .btn-service, .contact-banner .gioithieu-capture .text-banner .btn-login, .contact-banner .order-capture .text-banner .btn-gioithieu, .contact-banner .order-capture .text-banner .btn-order, .contact-banner .order-capture .text-banner .btn-contact, .contact-banner .order-capture .text-banner .btn-service, .contact-banner .order-capture .text-banner .btn-login, .contact-banner .contact-capture .text-banner .btn-gioithieu, .contact-banner .contact-capture .text-banner .btn-order, .contact-banner .contact-capture .text-banner .btn-contact, .contact-banner .contact-capture .text-banner .btn-service, .contact-banner .contact-capture .text-banner .btn-login, .contact-banner .service-capture .text-banner .btn-gioithieu, .contact-banner .service-capture .text-banner .btn-order, .contact-banner .service-capture .text-banner .btn-contact, .contact-banner .service-capture .text-banner .btn-service, .contact-banner .service-capture .text-banner .btn-login, .contact-banner .login-capture .text-banner .btn-gioithieu, .contact-banner .login-capture .text-banner .btn-order, .contact-banner .login-capture .text-banner .btn-contact, .contact-banner .login-capture .text-banner .btn-service, .contact-banner .login-capture .text-banner .btn-login, .service-banner .gioithieu-capture .text-banner .btn-gioithieu, .service-banner .gioithieu-capture .text-banner .btn-order, .service-banner .gioithieu-capture .text-banner .btn-contact, .service-banner .gioithieu-capture .text-banner .btn-service, .service-banner .gioithieu-capture .text-banner .btn-login, .service-banner .order-capture .text-banner .btn-gioithieu, .service-banner .order-capture .text-banner .btn-order, .service-banner .order-capture .text-banner .btn-contact, .service-banner .order-capture .text-banner .btn-service, .service-banner .order-capture .text-banner .btn-login, .service-banner .contact-capture .text-banner .btn-gioithieu, .service-banner .contact-capture .text-banner .btn-order, .service-banner .contact-capture .text-banner .btn-contact, .service-banner .contact-capture .text-banner .btn-service, .service-banner .contact-capture .text-banner .btn-login, .service-banner .service-capture .text-banner .btn-gioithieu, .service-banner .service-capture .text-banner .btn-order, .service-banner .service-capture .text-banner .btn-contact, .service-banner .service-capture .text-banner .btn-service, .service-banner .service-capture .text-banner .btn-login, .service-banner .login-capture .text-banner .btn-gioithieu, .service-banner .login-capture .text-banner .btn-order, .service-banner .login-capture .text-banner .btn-contact, .service-banner .login-capture .text-banner .btn-service, .service-banner .login-capture .text-banner .btn-login, .login-banner .gioithieu-capture .text-banner .btn-gioithieu, .login-banner .gioithieu-capture .text-banner .btn-order, .login-banner .gioithieu-capture .text-banner .btn-contact, .login-banner .gioithieu-capture .text-banner .btn-service, .login-banner .gioithieu-capture .text-banner .btn-login, .login-banner .order-capture .text-banner .btn-gioithieu, .login-banner .order-capture .text-banner .btn-order, .login-banner .order-capture .text-banner .btn-contact, .login-banner .order-capture .text-banner .btn-service, .login-banner .order-capture .text-banner .btn-login, .login-banner .contact-capture .text-banner .btn-gioithieu, .login-banner .contact-capture .text-banner .btn-order, .login-banner .contact-capture .text-banner .btn-contact, .login-banner .contact-capture .text-banner .btn-service, .login-banner .contact-capture .text-banner .btn-login, .login-banner .service-capture .text-banner .btn-gioithieu, .login-banner .service-capture .text-banner .btn-order, .login-banner .service-capture .text-banner .btn-contact, .login-banner .service-capture .text-banner .btn-service, .login-banner .service-capture .text-banner .btn-login, .login-banner .login-capture .text-banner .btn-gioithieu, .login-banner .login-capture .text-banner .btn-order, .login-banner .login-capture .text-banner .btn-contact, .login-banner .login-capture .text-banner .btn-service, .login-banner .login-capture .text-banner .btn-login {
+    opacity: .6; }
+
+.gioithieu-section {
+  color: var(--mainWhite);
+  padding: 3rem 0;
+  position: relative;
+  top: 0;
+  left: 0; }
+  .gioithieu-section .gioithieu-header {
+    text-transform: uppercase; }
+    .gioithieu-section .gioithieu-header h2 {
+      font-size: 3rem; }
+    .gioithieu-section .gioithieu-header p {
+      color: var(--mainGray); }
+  .gioithieu-section .gioithieu-wrap {
+    background: var(--mainBlack) !important; }
+    .gioithieu-section .gioithieu-wrap .gioithieu-card {
+      height: 550px;
+      position: relative;
+      perspective: 800px;
+      border-radius: 4px; }
+      .gioithieu-section .gioithieu-wrap .gioithieu-card .card {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: 0.8s;
+        border-radius: 6px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        cursor: pointer; }
+      .gioithieu-section .gioithieu-wrap .gioithieu-card .card div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 6px;
+        display: -ms-flexbox;
+        display: box;
+        display: flex;
+        -o-box-pack: center;
+        background: var(--mainBlack) !important;
+        justify-content: center;
+        align-items: center;
+        font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        color: var(--mainWhite); }
+      .gioithieu-section .gioithieu-wrap .gioithieu-card .card .front img {
+        height: 100%;
+        background-size: cover;
+        background-position: center center; }
+      .gioithieu-section .gioithieu-wrap .gioithieu-card .card .back {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        padding: 2rem 6rem; }
+      .gioithieu-section .gioithieu-wrap .gioithieu-card .card.flipped {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg); }
+
+.appointment > .appointment-form .form-group, .contact-item > .contact-form .form-group, .login-item > .login-form .form-group, .sign-item > .sign-form .form-group {
+  position: relative;
+  width: 100%;
+  display: block; }
+  .appointment > .appointment-form .form-group .select-wrap, .appointment > .appointment-form .form-group .input-wrap, .contact-item > .contact-form .form-group .select-wrap, .contact-item > .contact-form .form-group .input-wrap, .login-item > .login-form .form-group .select-wrap, .login-item > .login-form .form-group .input-wrap, .sign-item > .sign-form .form-group .select-wrap, .sign-item > .sign-form .form-group .input-wrap {
+    position: relative; }
+    .appointment > .appointment-form .form-group .select-wrap select, .appointment > .appointment-form .form-group .input-wrap select, .contact-item > .contact-form .form-group .select-wrap select, .contact-item > .contact-form .form-group .input-wrap select, .login-item > .login-form .form-group .select-wrap select, .login-item > .login-form .form-group .input-wrap select, .sign-item > .sign-form .form-group .select-wrap select, .sign-item > .sign-form .form-group .input-wrap select {
+      appearance: none; }
+  .appointment > .appointment-form .form-group .btn, .contact-item > .contact-form .form-group .btn, .login-item > .login-form .form-group .btn, .sign-item > .sign-form .form-group .btn {
+    border-radius: 0;
+    background: var(--mainGreen);
+    outline: none;
+    border: 1px solid var(--mainGreen);
+    font-size: 1rem;
+    font-weight: 500; }
+    .appointment > .appointment-form .form-group .btn:hover, .appointment > .appointment-form .form-group .btn:focus, .contact-item > .contact-form .form-group .btn:hover, .contact-item > .contact-form .form-group .btn:focus, .login-item > .login-form .form-group .btn:hover, .login-item > .login-form .form-group .btn:focus, .sign-item > .sign-form .form-group .btn:hover, .sign-item > .sign-form .form-group .btn:focus {
+      border: 1px solid var(--mainGreen);
+      color: var(--mainGreen);
+      background: transparent; }
+.appointment > .appointment-form .form-control, .contact-item > .contact-form .form-control, .login-item > .login-form .form-control, .sign-item > .sign-form .form-control {
+  border: transparent !important;
+  border-bottom: 1px solid var(--mainGray) !important;
+  height: 58px !important;
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 13px;
+  border-radius: 0px;
+  box-shadow: none !important; }
+.appointment > .appointment-form textarea.form-control, .contact-item > .contact-form textarea.form-control, .login-item > .login-form textarea.form-control, .sign-item > .sign-form textarea.form-control {
+  height: inherit !important; }
+
+.login-item p, .sign-item p {
+  color: var(--mainWhite); }
+  .login-item p a, .sign-item p a {
+    color: var(--mainGreen); }
+.login-item .login, .sign-item .login {
+  width: 100%;
+  display: block;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  color: var(--mainWhite) !important;
+  outline: none; }
+  .login-item .login i, .sign-item .login i {
+    font-size: 1.4rem;
+    margin: 1rem; }
+.login-item .login-face, .sign-item .login-face {
+  background: var(--mainFace); }
+.login-item .login-google, .sign-item .login-google {
+  background: var(--mainGoogle); }
+.login-item .login-twitter, .sign-item .login-twitter {
+  background: var(--mainTwitter); }
+.login-item h4, .sign-item h4 {
+  color: var(--mainWhite);
+  font-size: 2rem; }
+
+.contact-section, .login-section, .sign-section {
+  padding: 8em 0; }
+  .contact-section .contact-information, .login-section .contact-information, .sign-section .contact-information {
+    padding: 0 5rem; }
+    .contact-section .contact-information h4, .login-section .contact-information h4, .sign-section .contact-information h4 {
+      margin-bottom: 2rem;
+      color: var(--mainWhite); }
+    .contact-section .contact-information .contact-element ul, .login-section .contact-information .contact-element ul, .sign-section .contact-information .contact-element ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem; }
+      .contact-section .contact-information .contact-element ul li, .login-section .contact-information .contact-element ul li, .sign-section .contact-information .contact-element ul li {
+        margin-bottom: 2rem;
+        color: var(--mainGray); }
+        .contact-section .contact-information .contact-element ul li span, .login-section .contact-information .contact-element ul li span, .sign-section .contact-information .contact-element ul li span {
+          color: var(--mainWhite); }
+        .contact-section .contact-information .contact-element ul li a, .login-section .contact-information .contact-element ul li a, .sign-section .contact-information .contact-element ul li a {
+          text-decoration: none;
+          color: var(--mainGreen); }
+
+/*# sourceMappingURL=index.css.map */
